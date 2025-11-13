@@ -1,0 +1,4 @@
+fondo=lightblue
+parrafo=green
+texto=black
+imagen=https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg

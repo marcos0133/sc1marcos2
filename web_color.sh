@@ -1,14 +1,13 @@
 #!/bin/bash
-# Genera una página con colores personalizados
+# Genera una página con colores leídos de un fichero
 
-read -p "Color de fondo: " bg
-read -p "Color de párrafo: " pcolor
-read -p "Color del texto: " text
+source colors.txt
 
 cat > index.html <<EOF
 <html>
-  <body style="background-color:${bg}; color:${text};">
-    <p style="color:${pcolor};">Esta es mi página con colores personalizados.</p>
+  <body style="background-color:${fondo}; color:${texto};">
+    <p style="color:${parrafo};">Esta es mi página con colores desde fichero.</p>
+    <img src="${imagen}" alt="Imagen personalizada" width="300">
   </body>
 </html>
 EOF
